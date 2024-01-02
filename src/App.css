@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #DCEBFF;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+    background-color: white;
+    height: auto;
+    width: 400px;
+    border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header_ {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-title {
+    display: inline-block;
+    color: #6A5ACD;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.title_bar {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article_, .create_article, .update_article {
+    padding-left: 20px;
+}
+
+.content_title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color : purple;
+    text-decoration: underline;
+}
+
+a:active {
+    color : green;
+    text-decoration: none;
+}
+
+.ul_list_1, .ul_list_2, .ul_list_3 {
+    list-style: none;
+}
+
+.ol_style {
+    font-size: 18px;
+}
+
+.ul_style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 0px 30px 0px;
+}
+
+.create_btn, .update_btn, .delete_btn {
+    border-radius: 8px;
+    background-color: #f0ecfc;
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .background {
+        width: 600px;
+    }
+    .header-title {
+        font-size: 40px;
+    }
+}
+
+@media (min-width:1025px){
+    .background {
+        width: 800px;
+    }
+    .header-title {
+        font-size: 50px;
+    }
+    .title_bar {
+        font-size: 40px;
+    }
+    .ol_style {
+        font-size: 20px;
+    }
+    .ul_style {
+        font-size: 20px;
+    }
+    .article_{
+        font-size: 20px;
+    }
+    .create_btn, .update_btn, .delete_btn {
+        font-size: 20px;
+    }
 }
